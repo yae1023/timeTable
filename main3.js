@@ -48,6 +48,9 @@
             case "kiso":
               kisoSum += 2;
               break;
+            case "kiso bibun":
+              kisoSum += 3;
+              break;
             case "kyoyo":
               kyoyoSum += 1;
               break;
