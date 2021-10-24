@@ -45,6 +45,9 @@
             case "kikai2":
               kikai2Sum += 2;
               break;
+            case "kikai2 bisyo":
+              kikai2Sum += 1;
+              break;
             case "denzyo2":
               denzyo2Sum += 2
               break;
