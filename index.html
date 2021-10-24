@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- レスポンシブデザイン用 -->
+  <title>豊工専用_時間割</title>
+  <link href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1>豊田工業大学 後期時間割</h1>
+
+  <div class="container">
+    <ul class="menu">
+      <li><a href="#" class="active" data-id="about">学部 時間割</a></li>
+      <li><a href="#" data-id="service">修士 時間割</a></li>
+    </ul>
+
+    <section class="content active" id="about">
+
+    <table align="center" class="table">
+      <thead>
+        <tr class="dayOfWeek">
+          <th width = "10%"></th>
+          <th width = "18%">Mon</th>
+          <th width = "18%">Tue</th>
+          <th width = "18%">Wed</th>
+          <th width = "18%">Thu</th>
+          <th width = "18%">Fri</th>
+        </tr>
+      </thead>
+      <tbody>
+
+<!-- 1限目 -->      
+      <tr>
+        <th>1</br>8:50~10:20</th>
+        <td>
+          <label class="radio"><input type="radio"   id="radio" name="radio1" value="none">none</label>
+          <label class="radio" style="color:slateblue;"><input type="radio"   id="radio" name="radio1" value="bussitu">分析科学</label>
+          <label class="radio" style="color:navy;"><input type="radio"   id="radio" name="radio1" value="kogakukiso">偏微分</label>
+        </td>
+
+        <td>
+          <label class="radio"><input type="radio"  id="radio" name="radio2" value="none">none</label>
+          <label class="radio" style="color:green;"><input type="radio" id="radio" name="radio2" value="english">英語基礎2</label>
+          <label class="radio" style="color:green;"><input type="radio" id="radio" name="radio2" value="english">英語コミュニケーション2</label>
+          <label class="radio" style="color:darkorange;"><input type="radio" id="radio" name="radio2" value="denzyo">アルゴリズムとデータ構造</label>
+          <label class="radio" style="color:darkorange;"><input type="radio" id="radio" name="radio2" value="denzyo">電気工学2</label>
+        </td>
+
+        <td id="c1" onclick="clicked('c1')">
+          <label class="radio"><input type="radio"  id="radio" name="radio3" value="none">none</label>
+          <label class="radio" style="color:green;"><input type="radio"  id="radio" name="radio3" value="english">基礎英語2</label>
+          <label class="radio" style="color:green;"><input type="radio"  id="radio" name="radio3" value="english">英語コミュニケーション2</label>
+          <label class="radio" style="color:fuchsia;"><input type="radio"  id="radio" name="radio3" value="kikai">流体基礎</label>
+          <label class="radio" style="color:#990;"><input type="radio"  id="radio" name="radio3" value="denbu">半導体デバイス工学1</label>
+          <label class="radio" style="color:fuchsia;"><input type="radio"  id="radio" name="radio3" value="kikai">弾塑性力学</label>         
+        </td>
+
+        <td>
+          <label class="radio"><input type="radio"  id="radio" name="radio4" value="none">none</label>
+          <label class="radio" style="color:navy;"><input type="radio"  id="radio" name="radio4" value="kiso">CP基礎及び実習2</label>
+          <label class="radio" style="color:slateblue;"><input type="radio"  id="radio" name="radio4" value="bussitu">量子力学2</label>
+          <label class="radio" style="color:fuchsia;"><input type="radio"  id="radio" name="radio4" value="kikai">加工プロセス</label>
+          <label class="radio" style="color:darkorange;"><input type="radio"  id="radio" name="radio4" value="denzyo">情報理論</label>        
+      </td>
+
+      <td>
+        <label class="radio"><input type="radio"  id="radio" name="radio5" value="none">none</label>
+        <label class="radio" style="color:navy;"><input type="radio"  id="radio" name="radio5" value="kiso">化学2a,2b</label>
+        <label class="radio" style="color:darkorange;"><input type="radio"  id="radio" name="radio5" value="denzyo">電子回路工学</label>
+        <label class="radio" style="color:fuchsia;"><input type="radio"  id="radio" name="radio5" value="kikai">設計演習</label>
+      </td>
+
+<!-- 2限目 -->      
+      <tr>
+        <th>2</br>10:30~12:00</th>
+        <td>
+          <label class="radio"><input type="radio"  id="radio" name="radio6" value="none">none</label>
+          <label class="radio" style="color:navy;"><input type="radio"  id="radio" name="radio6" value="kiso">確率・統計</label>
+          <label class="radio" style="color:slateblue;"><input type="radio"  id="radio" name="radio6" value="bussitu">有機化学1</label>
+          <label class="radio" style="color:#990;"><input type="radio"  id="radio" name="radio6" value="denbu">物性工学2</label>
+        </td> 
+
+        <td>
+          <label class="radio"><input type="radio"  id="radio" name="radio7" value="none">none</label>
+          <label class="radio" style="color:purple;"><input type="radio"  id="radio" name="radio7" value="kyoyo">現代物理学特論</label>
+          <label class="radio" style="color:navy;"><input type="radio"  id="radio" name="radio7" value="kiso">力学2a,2b</label>
+          <label class="radio" style="color:green;"><input type="radio"  id="radio" name="radio7" value="english">基礎英語4</label>
+          <label class="radio" style="color:green;"><input type="radio"  id="radio" name="radio7" value="english">英語コミュニケーション4</label>
+          <label class="radio" style="color:fuchsia;"><input type="radio"  id="radio" name="radio7" value="kikai">機械加工学</label>
+          <label class="radio" style="color:darkorange;"><input type="radio"  id="radio" name="radio7" value="denzyo">コンピュータアーキテクチャ</label>
+        </td>
+
+        <td>
+          <label class="radio"><input type="radio"  id="radio" name="radio8" value="none">none</label>
+          <label class="radio" style="color:navy;"><input type="radio"  id="radio" name="radio8" value="kiso">電磁気学1</label>
+          <label class="radio" style="color:green;"><input type="radio"  id="radio" name="radio8" value="english">基礎英語4</label>
+          <label class="radio" style="color:green;"><input type="radio"  id="radio" name="radio8" value="english">英語コミュニケーション4</label>
+          <label class="radio" style="color:fuchsia;"><input type="radio"  id="radio" name="radio8" value="kikai">機構学</label>
+          <label class="radio" style="color:darkorange;"><input type="radio"  id="radio" name="radio8" value="denzyo">ソフトウェア工学</label>
+        </td>
+
+        <td>
+          <label class="radio"><input type="radio"  id="radio" name="radio9" value="none">none</label>
+          <!-- <label class="radio" style="color:navy;"><input type="radio"  id="radio" name="radio9" value="kiso">CP基礎及び実習2</label> -->
+          <label class="radio" style="color:purple;"><input type="radio"  id="radio" name="radio9" value="kyoyo">世界の歴史</label>
+          <label class="radio" style="color:purple;"><input type="radio"  id="radio" name="radio9" value="kyoyo">健康体力科学論</label>
+        </td>
+
+        <td>
+          <label class="radio"><input type="radio"  id="radio" name="radio10" value="none">none</label>
+          <label class="radio" style="color:purple;"><input type="radio"  id="radio" name="radio10" value="kyoyo">教養基礎セミナー2</label>
+          <label class="radio" style="color:fuchsia;"><input type="radio"  id="radio" name="radio10" value="kikai">材料力学</label>
+          <!-- <label class="radio" style="color:fuchsia;"><input type="radio"  id="radio" name="radio10" value="kikai">設計演習</label> -->
+        </td>
+      </tr>
+
+<!-- 3限目 -->
+      <tr>
+        <th>3</br>13:00~14:30</th>
+        <td>
+          <label class="radio"><input type="radio"  id="radio" name="radio11" value="none">none</label>
+          <label class="radio" style="color:navy;"><input type="radio"  id="radio" name="radio11" value="kiso">ベクトル解析</label>
+          <label class="radio" style="color:maroon;"><input type="radio"  id="radio" name="radio11" value="hissyu">技術開発特論</label>
+        </td> 
+
+        <td>
+          <label class="radio"><input type="radio"  id="radio" name="radio12" value="none">none</label>
+          <label class="radio" style="color:maroon;"><input type="radio"  id="radio" name="radio12" value="hissyu">工学リテラシー2</label>
+          <label class="radio" style="color:navy;"><input type="radio"  id="radio" name="radio12" value="kiso">解析2b,2a</label>
+          <label class="radio" style="color:darkorange;"><input type="radio"  id="radio" name="radio12" value="denzyo">コンピュータグラフィックス</label>
+          <label class="radio" style="color:slateblue;"><input type="radio"  id="radio" name="radio12" value="bussitu">生物工学</label>
+        </td>
+
+        <td>
+          <label class="radio"><input type="radio"  id="radio" name="radio13" value="none">none</label>
+          <label class="radio" style="color:navy;"><input type="radio"  id="radio" name="radio13" value="kiso">線形代数2</label>
+          <label class="radio" style="color:maroon;"><input type="radio"  id="radio" name="radio13" value="hissyu">工学基礎実験2</label>
+          <!-- <label class="radio"><input type="radio"  id="radio" name="radio13" value=" ">創造性開発</label> -->
+          <label class="radio" style="color:green;"><input type="radio"  id="radio" name="radio13" value="english">英語テクニカルライティング1</label>
+        </td>
+
+        <td>
+          <label class="radio"><input type="radio"  id="radio" name="radio14" value="none">none</label>
+          <label class="radio" style="color:slateblue;"><input type="radio"  id="radio" name="radio14" value="bussitu">物質工学実験</label>
+          <label class="radio" style="color:#f69;"><input type="radio"  id="radio" name="radio14" value="kiden">C言語プログラミング</label>
+        </td>
+
+        <td>
+          <label class="radio"><input type="radio"  id="radio" name="radio15" value="none">none</label>
+          <label class="radio" style="color:navy;"><input type="radio"  id="radio" name="radio15" value="kiso">微分積分学2及び演習</label>
+          <label class="radio" style="color:darkorange;"><input type="radio"  id="radio" name="radio15" value="denzyo">制御工学基礎</label>
+          <label class="radio" style="color:maroon;"><input type="radio"  id="radio" name="radio15" value="hissyu">創造性開発セミナー</label>
+        </td>
+      </tr>
+
+<!-- 4限目 -->
+      <tr>
+        <th>4</br>14:40~16:10</th>
+        <td>
+          <label class="radio"><input type="radio"  id="radio" name="radio16" value="none">none</label>
+          <label class="radio" style="color:purple;"><input type="radio"  id="radio" name="radio16" value="kyoyo">哲学入門</label>
+          <label class="radio" style="color:purple;"><input type="radio"  id="radio" name="radio16" value="kyoyo">日常生活の法律問題</label>
+          <label class="radio" style="color:green;"><input type="radio"  id="radio" name="radio16" value="english">ドイツ語2</label>
+          <label class="radio" style="color:green;"><input type="radio"  id="radio" name="radio16" value="english">中国語1</label>
+          <label class="radio" style="color:green;"><input type="radio"  id="radio" name="radio16" value="english">中国語2</label>
+        </td> 
+
+        <td>
+          <label class="radio"><input type="radio"  id="radio" name="radio17" value="none">none</label>
+          <!-- <label class="radio" style="color:maroon;"><input type="radio"  id="radio" name="radio17" value="hissyu">工学リテラシー2</label> -->
+          <label class="radio" style="color:fuchsia;"><input type="radio"  id="radio" name="radio17" value="kikai">応用熱力学</label>
+          <label class="radio" style="color:slateblue;"><input type="radio"  id="radio" name="radio17" value="bussitu">無機材料科学</label>
+        </td>
+
+        <td>
+          <label class="radio"><input type="radio"  id="radio" name="radio18" value="none">none</label>
+          <label class="radio" style="color:navy;"><input type="radio"  id="radio" name="radio18" value="kiso">物理学実験1,2/化学実験2</label>
+          <!-- <label class="radio" style="color:maroon;"><input type="radio"  id="radio" name="radio18" value="hissyu">工学基礎実験2</label> -->
+          <!-- <label class="radio" style="color:maroon;"><input type="radio"  id="radio" name="radio18" value="hissyu">創造性開発実習2</label> -->
+          <label class="radio" style="color:green;"><input type="radio"  id="radio" name="radio18" value="english">応用英語2(TOEIC)</label>
+        </td>
+
+        <td>
+          <label class="radio"><input type="radio"  id="radio" name="radio19" value="none">none</label>
+          <!-- <label class="radio" style="color:slateblue;"><input type="radio"  id="radio" name="radio19" value="bussitu">物質工学実験</label> -->
+        </td>
+
+        <td>
+          <label class="radio"><input type="radio"  id="radio" name="radio20" value="none">none</label>
+          <!-- <label class="radio" style="color:navy;"><input type="radio"  id="radio" name="radio20" value="kiso">微分積分学2及び演習</label> -->
+          <label class="radio" style="color:red;"><input type="radio"  id="radio" name="radio20" value="sport">基礎スポーツ4</label>
+          <!-- <label class="radio" style="color:maroon;"><input type="radio"  id="radio" name="radio20" value="hissyu">創造性開発セミナー</label> -->
+        </td>
+      </tr>
+
+<!-- 5限目 -->
+      <tr>
+        <th>5</br>16:20~17:50</th>
+        <td>
+          <label class="radio"><input type="radio"  id="radio" name="radio21" value="none">none</label>
+          <label class="radio" style="color:green;"><input type="radio"  id="radio" name="radio21" value="english">英語特別演習2(a)</label>
+          <label class="radio" style="color:green;"><input type="radio"  id="radio" name="radio21" value="english">英語特別演習2(b)</label>
+        </td> 
+
+        <td>
+          <label class="radio"><input type="radio"  id="radio" name="radio22" value="none">none</label>
+          <!-- <label class="radio" style="color:maroon;"><input type="radio"  id="radio" name="radio22" value="hissyu">工学リテラシー2</label> -->
+          <label class="radio" style="color:maroon;"><input type="radio"  id="radio" name="radio22" value="hissyu"> 現代工学概論2</label>
+          <label class="radio" style="color:slateblue;"><input type="radio"  id="radio" name="radio22" value="bussitu">量子力学</label>
+          <label class="radio" style="color:green;"><input type="radio"  id="radio" name="radio22" value="english">応用英語4</label>
+          <label class="radio" style="color:red;"><input type="radio"  id="radio" name="radio22" value="sport">生涯スポーツ2</label>
+        </td>
+
+        <td>
+          <label class="radio"><input type="radio"  id="radio" name="radio23" value="none">none</label>
+          <!-- <label class="radio" style="color:navy;"><input type="radio"  id="radio" name="radio23" value="kiso">物理学実験1,2</label>
+          <label class="radio" style="color:navy;"><input type="radio"  id="radio" name="radio23" value="kiso">化学実験2</label>
+          <label class="radio" style="color:maroon;"><input type="radio"  id="radio" name="radio23" value="hissyu">工学基礎実験2</label>
+          <label class="radio" style="color:maroon;"><input type="radio"  id="radio" name="radio23" value="hissyu">創造性開発実習2</label> -->
+          <label class="radio" style="color:green;"><input type="radio"  id="radio" name="radio23" value="english">英語読解演習</label>
+          <label class="radio" style="color:slateblue;"><input type="radio"  id="radio" name="radio23" value="bussitu">高分子科学</label>
+        </td>
+
+        <td>
+          <label class="radio"><input type="radio"  id="radio" name="radio24" value="none">none</label>
+        </td>
+
+        <td>
+          <label class="radio"><input type="radio"  id="radio" name="radio25" value="none">none</label>
+          <label class="radio" style="color:red;"><input type="radio"  id="radio" name="radio25" value="sport">基礎スポーツ2</label>
+        </td>
+      </tr> 
+    </tbody>
+  </table>
+
+  <div class="list1">
+    <div class="li0">
+      <p>種類</p>
+      <p>単位数</p>
+    </div>
+    <div class="li1" style="color:maroon;">
+      <p>必修</p>
+      <p id="hissyu">0</p>
+    </div>
+    <div class="li1" style="color:navy;">
+      <p>工学基礎</p>
+      <p id="kiso">0</p>
+    </div>
+    <div class="li1" style="color:purple;">
+      <p>教養</p>
+      <p id="liberal">0</p>
+    </div>
+    <div class="li1" style="color:green;">
+      <p>外国語</p>
+      <p id="lang">0</p>
+    </div>
+    <div class="li1" style="color:red;">
+      <p>スポーツ</p>
+      <p id="sport">0</p>
+    </div>
+    <div class="li1" style="color:fuchsia;">
+      <p>機械</p>
+      <p id="kikai">0</p>
+    </div>
+    <div class="li1" style="color:darkorange;">
+      <p>電情</p>
+      <p id="denzyo">0</p>
+    </div>
+    <div class="li1" style="color:slateblue;">
+      <p>物質</p>
+      <p id="bussitu">0</p>
+    </div>
+  </div>
+  <div class="list2">
+    <div class="li1" style="color:#f69;">
+      <p>機械or電情</p>
+      <p id="kiden">0</p>
+    </div>
+    <div class="li1" style="color:#c6f;">
+      <p>機械or物質</p>
+      <p id="kibu">0</p>
+    </div>
+    <div class="li1" style="color:#990;">
+      <p>電情or物質</p>
+      <p id="denbu">0</p>
+    </div>
+    <div class="li1" style="color:darkturquoise;">
+      <p>機械or電情or物質</p>
+      <p id="kidenbu">0</p>
+    </div>
+  </div>
+    
+
+  <div class="button">
+    <input type="button" value="合計" id="checkButton" class="butt">
+    <input type="button" value="リセット" id="resetButton" class="butt">
+  </div>
+
+</section>  <!--id="about"-->
+
+<!-- 修士 時間割 -->
+<section  class="content" id="service">
+  <table align="center" class="table">
+    <thead>
+      <tr class="dayOfWeek">
+        <th width = "10%"></th>
+        <th width = "18%">Mon</th>
+        <th width = "18%">Tue</th>
+        <th width = "18%">Wed</th>
+        <th width = "18%">Thu</th>
+        <th width = "18%">Fri</th>
+      </tr>
+    </thead>
+    <tbody>
+
+<!-- 1限目 -->      
+    <tr>
+      <th>1</br>8:50~10:20</th>
+      <td>
+        <label class="radio"><input type="radio"   id="radio" name="radio26" value="none">none</label>
+        <label class="radio" style="color:fuchsia;"><input type="radio"   id="radio" name="radio26" value="kikai2">熱及び物質移動論</label>
+      </td>
+
+      <td>
+        <label class="radio"><input type="radio"  id="radio" name="radio27" value="none">none</label>
+        <label class="radio" style="color:#c6f;"><input type="radio" id="radio" name="radio27" value="kibu2">創形創質工学</label>
+      </td>
+
+      <td>
+        <label class="radio"><input type="radio"  id="radio" name="radio28" value="none">none</label>
+        <label class="radio" style="color:fuchsia;"><input type="radio"  id="radio" name="radio28" value="kikai2">固体力学特論a,b</label>
+        <label class="radio" style="color:#990;"><input type="radio"  id="radio" name="radio28" value="denbu2">物質化学反応論a,b</label>        
+      </td>
+
+      <td>
+        <label class="radio"><input type="radio"  id="radio" name="radio29" value="none">none</label>
+        <label class="radio" style="color:green;"><input type="radio"  id="radio" name="radio29" value="eigo">科学技術英語2①</label>
+    </td>
+
+    <td>
+      <label class="radio"><input type="radio"  id="radio" name="radio30" value="none">none</label>
+      <label class="radio" style="color:slateblue;"><input type="radio"  id="radio" name="radio30" value="bussitu2">ナノ構造材料a,b</label>
+    </td>
+
+<!-- 2限目 -->      
+    <tr>
+      <th>2</br>10:30~12:00</th>
+      <td>
+        <label class="radio"><input type="radio"  id="radio" name="radio31" value="none">none</label>
+        <label class="radio" style="color:slateblue;"><input type="radio"  id="radio" name="radio31" value="bussitu2">現代物理学特論</label>
+      </td> 
+
+      <td>
+        <label class="radio"><input type="radio"  id="radio" name="radio32" value="none">none</label>
+        <label class="radio" style="color:#f69;"><input type="radio"  id="radio" name="radio32" value="kiden2">コンピュータビジョン</label>
+      </td>
+
+      <td>
+        <label class="radio"><input type="radio"  id="radio" name="radio33" value="none">none</label>
+        <label class="radio" style="color:#990;"><input type="radio"  id="radio" name="radio33" value="denbu2">化合物半導体デバイス</label>
+      </td>
+
+      <td>
+        <label class="radio"><input type="radio"  id="radio" name="radio34" value="none">none</label>
+        <label class="radio" style="color:fuchsia;"><input type="radio"  id="radio" name="radio34" value="kikai2">固体物理学a,b</label>
+        <label class="radio" style="color:fuchsia;"><input type="radio"  id="radio" name="radio34" value="kikai2">微小機械学b</label>
+      </td>
+
+      <td>
+        <label class="radio"><input type="radio"  id="radio" name="radio35" value="none">none</label>
+        <label class="radio" style="color:#f69;"><input type="radio"  id="radio" name="radio35" value="kiden2">機械学習入門1</label>
+      </td>
+    </tr>
+
+<!-- 3限目 -->
+    <tr>
+      <th>3</br>13:00~14:30</th>
+      <td>
+        <label class="radio"><input type="radio"  id="radio" name="radio36" value="none">none</label>
+        <label class="radio" style="color:#f69;"><input type="radio"  id="radio" name="radio36" value="kiden2">生産システム</label>
+      </td> 
+
+      <td>
+        <label class="radio"><input type="radio"  id="radio" name="radio37" value="none">none</label>
+        <label class="radio" style="color:darkorange;"><input type="radio"  id="radio" name="radio37" value="denzyo2">情報通信工学</label>
+      </td>
+
+      <td>
+        <label class="radio"><input type="radio"  id="radio" name="radio38" value="none">none</label>
+      </td>
+
+      <td>
+        <label class="radio"><input type="radio"  id="radio" name="radio39" value="none">none</label>
+        <label class="radio" style="color:purple;"><input type="radio"  id="radio" name="radio39" value="kodo">科学技術と人間社会</label>
+      </td>
+
+      <td>
+        <label class="radio"><input type="radio"  id="radio" name="radio40" value="none">none</label>
+        <label class="radio" style="color:fuchsia;"><input type="radio"  id="radio" name="radio40" value="kikai2">流体力学特論a,b</label>
+        <label class="radio" style="color:darkorange;"><input type="radio"  id="radio" name="radio40" value="denzyo2">電磁気学特論</label>
+      </td>
+    </tr>
+
+<!-- 4限目 -->
+    <tr>
+      <th>4</br>14:40~16:10</th>
+      <td>
+        <label class="radio"><input type="radio"  id="radio" name="radio50" value="none">none</label>
+        <label class="radio" style="color:#990;"><input type="radio"  id="radio" name="radio50" value="denbu2">光・電磁波工学</label>
+      </td> 
+
+      <td>
+        <label class="radio"><input type="radio"  id="radio" name="radio51" value="none">none</label>
+      </td>
+
+      <td>
+        <label class="radio"><input type="radio"  id="radio" name="radio52" value="none">none</label>
+      </td>
+
+      <td>
+        <label class="radio"><input type="radio"  id="radio" name="radio53" value="none">none</label>
+      </td>
+
+      <td>
+        <label class="radio"><input type="radio"  id="radio" name="radio54" value="none">none</label>
+        <label class="radio" style="color:darkorange;"><input type="radio"  id="radio" name="radio54" value="denzyo2">情報数理2</label>
+      </td>
+    </tr>
+
+<!-- 5限目 -->
+    <tr>
+      <th>5</br>16:20~17:50</th>
+      <td>
+        <label class="radio"><input type="radio"  id="radio" name="radio55" value="none">none</label>
+      </td> 
+
+      <td>
+        <label class="radio"><input type="radio"  id="radio" name="radio56" value="none">none</label>
+      </td>
+
+      <td>
+        <label class="radio"><input type="radio"  id="radio" name="radio57" value="none">none</label>
+      </td>
+
+      <td>
+        <label class="radio"><input type="radio"  id="radio" name="radio58" value="none">none</label>
+      </td>
+
+      <td>
+        <label class="radio"><input type="radio"  id="radio" name="radio59" value="none">none</label>
+        <label class="radio" style="color:green;"><input type="radio"  id="radio" name="radio59" value="eigo">科学技術英語2②</label>
+      </td>
+    </tr> 
+  </tbody>
+</table>
+
+<div class="list1">
+  <div class="li0">
+    <p>種類</p>
+    <p>単位数</p>
+  </div>
+
+  <div class="li1" style="color:purple;">
+    <p>高度教養</p>
+    <p id="kodo">0</p>
+  </div>
+  <div class="li1" style="color:green;">
+    <p>英語</p>
+    <p id="eigo">0</p>
+  </div>
+  <div class="li1" style="color:fuchsia;">
+    <p>機械</p>
+    <p id="kikai2">0</p>
+  </div>
+  <div class="li1" style="color:darkorange;">
+    <p>電情</p>
+    <p id="denzyo2">0</p>
+  </div>
+  <div class="li1" style="color:slateblue;">
+    <p>物質</p>
+    <p id="bussitu2">0</p>
+  </div>
+</div>
+<div class="list2">
+  <div class="li1" style="color:#f69;">
+    <p>機械or電情</p>
+    <p id="kiden2">0</p>
+  </div>
+  <div class="li1" style="color:#c6f;">
+    <p>機械or物質</p>
+    <p id="kibu2">0</p>
+  </div>
+  <div class="li1" style="color:#990;">
+    <p>電情or物質</p>
+    <p id="denbu2">0</p>
+  </div>
+</div>
+  
+<div class="button">
+  <input type="button" value="合計" id="checkButton_2" class="butt">
+  <input type="button" value="リセット" id="resetButton_2" class="butt">
+</div>
+</section>  <!--id="service"-->
+
+</div>  <!--"container"-->
+
+<script src="main3.js"></script>
+<script src="main4.js"></script>
+</body>
+</html>
