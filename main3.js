@@ -47,7 +47,7 @@
             case "hissyu":
               hissyuSum += 1;
               break;
-            case "kogakukiso":
+            case "kiso":
               kisoSum += 2;
               break;
             case "kyoyo":
