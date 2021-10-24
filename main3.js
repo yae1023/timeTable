@@ -28,9 +28,7 @@
   const denbu = document.getElementById("denbu");
   const kidenbu = document.getElementById("kidenbu");
 
- var count = 0;
-  while (count <= 25) {
-    count += 1;
+  for (let count=0; count <= 25; count++){
     const name = 'radio' + String(count);
     let kamokuRadio = document.getElementsByName(name);
     let len =  kamokuRadio.length;
